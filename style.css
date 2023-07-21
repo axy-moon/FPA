@@ -10,7 +10,6 @@ nav {
 	padding: 0 6%;
 	justify-content: space-between;
 	align-items: center;
-    background-color: #FAF3F0;
 
 }
 
@@ -109,6 +108,10 @@ p {
 
 #gsc-table1 tbody tr:last-of-type {
     border-bottom: 2px solid #5A96E3;
+}
+
+#gsc-table2 td {
+    font-weight: 600;
 }
 
 #gsc-table2 tbody tr:last-of-type {
