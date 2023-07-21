@@ -6,12 +6,9 @@ nav {
 
 }
 
-.data-table h3 {
-	text-align: center;
-	font-size: 36px;
-	font-weight: 600;
-	padding-top: 10px;	
-	text-transform: uppercase;
+p {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -51,12 +48,7 @@ nav {
     border-bottom: 2px solid #A076F9;
 }
 
-.content-table tbody tr:hover {
 
-    color: #A076F9;
-    background-color: silver ;
-
-}
 
 .tin {
     width: 50px;

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function Point Analysis</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <nav class="navbar">
-        <h1>FPV Calculator</h1>
+        <h1>FPA Calculator</h1>
         <div class="nav-links">
             <a href="#">UAF</a>
             <a href="#">TDI</a>
@@ -20,56 +21,71 @@
         <table class="content-table">
             <thead>
                 <tr>
-                    <th>System Types</th>
-                    <th>Low</th>
-                    <th>Average</th>
-                    <th>High</th>
-                    <th>Total</th>
+                    <th rowspan="2">System Types</th>
+                    <th colspan="4" style="text-align: center;">Complexity of Components</th>
+                    
                   <!--   <th>Date of Birth</th>
                     <th>Email</th>
                     <th>Plan</th>
                     <th>Date Joined</th> -->
                 </tr>
+                <tr>
+                    <th>Low</th>
+                    <th>Average</th>
+                    <th>High</th>
+                    <th style="width: 90px;">Total</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>External Inputs</td>
-                    <td><input type="text" class="tin"></td>
-                    <td><input type="text" class="tin"></td>
-                    <td><input type="text" class="tin"></td>
 
+                    <td>External Inputs</td>
+                    <td><input type="number" id="eilow" oninput="EIl()" class="tin"></td>
+                    <td><input type="number" id="eiavg" oninput="EIa()" class="tin"></td>
+                    <td><input type="number" id="eihg" oninput="EIh()" class="tin"></td>
+                    <td><p id="eitotal"></p></td>
 
                 </tr>
                 <tr>
                     <td>External Outputs</td>
-                    <td><input type="text" class="tin"></td>
-                    <td><input type="text" class="tin"></td>
-                    <td><input type="text" class="tin"></td>
+                    <td><input type="number" id="eolow" oninput="EOl()" class="tin"></td>
+                    <td><input type="number" id="eoavg" oninput="EOa()" class="tin"></td>
+                    <td><input type="number"  id="eohg" oninput="EOh()" class="tin"></td>
+                    <td><p id="eototal"></p></td>
+
 
                 </tr>
                 <tr>
                     <td>External Inquiries</td>
-                    <td><input type="text" class="tin"></td>
-                    <td><input type="text" class="tin"></td>
-                    <td><input type="text" class="tin"></td>
+                    <td><input type="number" id="eqlow" oninput="EQl()" class="tin"></td>
+                    <td><input type="number" id="eqavg" oninput="EQa()" class="tin"></td>
+                    <td><input type="number" id="eqhg" oninput="EQh()" class="tin"></td>
+                    <td><p id="eqtotal"></p></td>
+
 
                 </tr>
                 <tr>
                     <td>Internal Logical Files</td>
-                    <td><input type="text" class="tin"></td>
-                    <td><input type="text" class="tin"></td>
-                    <td><input type="text" class="tin"></td>
+                    <td><input type="number" id="flow" oninput="IFl()" class="tin"></td>
+                    <td><input type="number" id="favg" oninput="IFa()" class="tin"></td>
+                    <td><input type="number" id="fhg" oninput="IFh()" class="tin"></td>
+                    <td><p id="ftotal"></p></td>
+
 
                 </tr>
                 <tr>
                     <td>External Interface Files</td>
-                    <td><input type="text" class="tin"></td>
-                    <td><input type="text" class="tin"></td>
-                    <td><input type="text" class="tin"></td>
+                    <td><input type="number" id="ilow" oninput="Il()" class="tin"></td>
+                    <td><input type="number" id="iavg" oninput="Ia()" class="tin"></td>
+                    <td><input type="number" id="ihg" oninput="Ih()" class="tin"></td>
+                    <td><p id="itotal"></p></td>
+
 
                 </tr>
             </tbody>
         </table>
+        <button class="tbutton" onclick="UAFtotal()">Click</button>
+        
     </div>
 
 </body>
