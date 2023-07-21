@@ -17,7 +17,7 @@
         </div>
     </nav>
 
-    <div>
+    <div class="main">
         <table class="content-table">
             <thead>
                 <tr>
@@ -84,8 +84,150 @@
                 </tr>
             </tbody>
         </table>
-        <button class="tbutton" onclick="UAFtotal()">Click</button>
+        <div class="res">
+            <button class="tbutton" onclick="UAFtotal()">Calculate UAF</button>
+            <h1 id="UAF"></h1>
+            
+        </div>
+    </div>
+
+    <div class="gsc">
+        <div>
+        <h2>Value Adjustment Factor Calculation Table</h2>
+        <table class="content-table" id="gsc-table1">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>General System Characteristics</th>
+                    <th>Degree of Influence - Scale</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Data Communication</td>
+                    <td><input type="number" name="" class="tin" id="f1"></td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Heavily Used Configuration</td>
+                    <td><input type="number" name="" class="tin" id="f2"></td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Transaction Rate</td>
+                    <td><input type="number" name="" class="tin" id="f3"></td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>End User Efficiency</td>
+                    <td><input type="number" name="" class="tin" id="f4"></td>
+
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Complex Processing</td>
+                    <td><input type="number" name="" class="tin" id="f5"></td>
+
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Installation Ease</td>
+                    <td><input type="number" name="" class="tin" id="f6"></td>
+
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Multiple Sites</td>
+                    <td><input type="number" name="" class="tin" id="f7"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Performance Objectives</td>
+                    <td><input type="number" name="" class="tin" id="f8"></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Distributed Functions</td>
+                    <td><input type="number" name="" class="tin" id="f9"></td>
+
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>On-line Update</td>
+                    <td><input type="number" name="" class="tin" id="f10"></td>
+
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Re-Usability</td>
+                    <td><input type="number" name="" class="tin" id="f11"></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Operational Ease</td>
+                    <td><input type="number" name="" class="tin" id="f12"></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Facilitate Change/Extensibility</td>
+                    <td><input type="number" name="" class="tin" id="f13"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Total Degree of Influence [TDI]</b></td>
+                    <td><p id="tdi"></p></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="gsc-btn1">
+            <button class="tbutton" onclick="TDIForm()">Calculate VAF</button>
+            <h3 id="VAF"></h3>
+        </div>
+    </div>
+    <div>
+        <h2>General Systems Characteristics</h2>
+        <table class="content-table" id="gsc-table2">
+            <thead>
+                <tr>
+                    <th>Degree of Influence</th>
+                    <th>Scale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: rgb(255, 200, 0);">
+                    <td>Not Present or No Influence</td>
+                    <td>0</td>
+                </tr>
+                <tr  style="color: rgb(255, 0, 234);" >
+                    <td>Incidental Influence</td>
+                    <td>1</td>
+                </tr>
+                <tr style="color: rgb(0, 17, 200);">
+                    <td>Moderate Influence</td>
+                    <td>2</td>
+                </tr>
+                <tr style="color: rgb(100, 5, 112);">
+                    <td>Average Influence</td>
+                    <td>3</td>
+                </tr>
+                <tr style="color: rgb(6, 162, 12);">
+                    <td>Significant Influence</td>
+                    <td>4</td>
+                </tr>
+                <tr style="color: red;">
+                    <td>Strong Influence throughout</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
         
+    </div>
     </div>
 
 </body>

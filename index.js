@@ -100,6 +100,7 @@ const Ih = () => {
 }
 
 function UAFtotal() {
+
     var ti=Number(document.getElementById('eitotal').innerText)
     var to =Number(document.getElementById('eototal').innerText)
     var tq = Number(document.getElementById('eqtotal').innerText)
@@ -107,5 +108,22 @@ function UAFtotal() {
     var tin = Number(document.getElementById('itotal').innerText)
     var totaluaf = ti+to+tq+tf+tin
 
-    console.log(totaluaf)
+    var result = document.getElementById('UAF')
+    result.innerText = "UAF: " + totaluaf
+    
+}
+
+const TDIForm = () => {
+
+    var sum = 0
+    for(var i=1;i<14;i++) {
+        var name = "f"+i
+        sum += Number(document.getElementById(name).value)
+    }
+    var a = document.getElementById('tdi')
+    a.innerText = sum
+    console.log("SUM: ",sum)
+    var cvaf = 0.65+(0.01*sum)
+    var b = document.getElementById('VAF')
+    b.innerText = "VAF: " + cvaf
 }

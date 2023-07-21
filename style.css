@@ -53,3 +53,64 @@ p {
 .tin {
     width: 50px;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.res {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.tbutton {
+    padding: 5px;
+    background: #A076F9;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border: none;
+    color: #fff;
+    height: 48px;
+    width: 20%;
+    margin: auto;
+}
+
+.gsc {
+    display: flex;
+    justify-content: space-around;
+}
+
+#gsc-table1 th {
+    background-color: #5A96E3;
+}
+
+#gsc-table2 th {
+    background-color: #3bb13b;
+}
+
+#gsc-table1 tr {
+    text-align: center;
+}
+
+
+#gsc-table1 tbody tr:last-of-type {
+    border-bottom: 2px solid #5A96E3;
+}
+
+#gsc-table2 tbody tr:last-of-type {
+    border-bottom: 2px solid #3bb13b;
+}
+.gsc-btn1 {
+    border: 1px solid red;
+    display: flex;
+}
+
+.gsc-btn1 button {
+    background-color: #5A96E3;
+}
