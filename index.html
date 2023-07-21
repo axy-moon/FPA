@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function Point Analysis</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="index.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <h1>FPA Calculator</h1>
-        <div class="nav-links">
-            <a href="#">UAF</a>
-            <a href="#">TDI</a>
-        </div>
     </nav>
 
     <div class="main">
+        <h1>Un-Adjusted Function Point Count Table</h1>
         <table class="content-table">
             <thead>
                 <tr>
@@ -197,6 +197,7 @@
     </div>
     <div>
         <h2>General Systems Characteristics</h2>
+        <h4 style="margin: 0; padding: 0;">Scale Table</h4>
         <table class="content-table" id="gsc-table2">
             <thead>
                 <tr>
@@ -231,7 +232,7 @@
                 </tr>
             </tbody>
         </table>
-        <div>
+        <div class="ffp">
             <h2>Final Function Point Count</h2>
             <p>VAF x UAF</p>
             <h2 id="final-result"></h2>
@@ -240,6 +241,8 @@
     </div>
    
     </div>
-
+    <footer style="text-align: center; margin-top: 100px;">
+        <p>Copyright  &#169 22MX108</p>
+    </footer>
 </body>
 </html>
