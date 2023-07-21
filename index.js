@@ -118,7 +118,7 @@ function UAFtotal() {
 const TDIForm = () => {
 
     var sum = 0
-    for(var i=1;i<14;i++) {
+    for(var i=1;i<15;i++) {
         var name = "f"+i
         sum += Number(document.getElementById(name).value)
     }
