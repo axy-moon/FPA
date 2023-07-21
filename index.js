@@ -128,7 +128,7 @@ const TDIForm = () => {
     var cvaf = 0.65+(0.01*sum)
     var b = document.getElementById('VAF')
     b.innerText = "VAF: " + cvaf
-    document.getElementById('formula').innerText = "VAF x UAF : " + guaf + " x " + cvaf
+    document.getElementById('formula').innerText = "UAF x VAF : " + guaf + " x " + cvaf
     document.getElementById('box').style.display = "block"
 
     document.getElementById('final-result').innerText = cvaf * guaf
