@@ -1,3 +1,4 @@
+var guaf = 0
 
 /* External Inputs */
 const EIl = () => {
@@ -110,6 +111,7 @@ function UAFtotal() {
 
     var result = document.getElementById('UAF')
     result.innerText = "UAF: " + totaluaf
+    guaf = totaluaf
     
 }
 
@@ -126,4 +128,6 @@ const TDIForm = () => {
     var cvaf = 0.65+(0.01*sum)
     var b = document.getElementById('VAF')
     b.innerText = "VAF: " + cvaf
+
+    document.getElementById('final-result').innerText = cvaf * guaf
 }
