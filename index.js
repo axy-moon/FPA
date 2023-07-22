@@ -1,103 +1,137 @@
 var guaf = 0
 
 /* External Inputs */
+
+
+
 const EIl = () => {
+
     var inlow = document.getElementById('eilow').value
-    ti=document.getElementById('eitotal')
-    ti.innerText = inlow*3
+    if(validate(inlow)){
+        ti=document.getElementById('eitotal')
+        ti.innerText = inlow*3
+    }
 }
 
 const EIa = () => {
     var inavg = document.getElementById('eiavg').value
+    if(validate(inavg)) {
     var ti = document.getElementById('eitotal')
     ti.innerText = inavg*4
+    }
 }
 
 const EIh = () => {
     var inhg = document.getElementById('eihg').value
+    if(validate(inhg)) {
     var ti = document.getElementById('eitotal')
     ti.innerText = inhg*6
-}
+
+}}
 
 /* External Outputs */
 
 const EOl = () => {
     var oplow = document.getElementById('eolow').value
+    if(validate(oplow)) {
     var to = document.getElementById('eototal')
     to.innerText = oplow*4
+    }
 }
 
 const EOa = () => {
     var opavg = document.getElementById('eoavg').value
+    if(validate(opavg)) {
     var to = document.getElementById('eototal')
     to.innerText = opavg*5
+    }
 }
 
 const EOh = () => {
     var ophg = document.getElementById('eohg').value
+    if(validate(ophg)) {
     var to = document.getElementById('eototal')
     to.innerText = ophg*7
-}
+
+}}
 
 
 /* External Inquiries */
 
 const EQl = () => {
     var oqlow = document.getElementById('eqlow').value
+    if(validate(oqlow)) {
     var tq = document.getElementById('eqtotal')
     tq.innerText = oqlow*3
+    }
 }
 
 const EQa = () => {
     var oqavg = document.getElementById('eqavg').value
+    if(validate(oqavg)) {
     var tq = document.getElementById('eqtotal')
     tq.innerText = oqavg*4
+    }
 }
 
 const EQh = () => {
     var oqhg = document.getElementById('eqhg').value
+    if(validate(oqhg)) {
     var tq = document.getElementById('eqtotal')
     tq.innerText = oqhg*6
-}
+
+}}
 
 /* FILES */
 
 const IFl = () => {
     var iflow = document.getElementById('flow').value
+    if(validate(iflow)) {
     var tf = document.getElementById('ftotal')
     tf.innerText = iflow*7
+    }
 }
 
 const IFa = () => {
     var ifavg = document.getElementById('favg').value
+    if(validate(ifavg)) {
     var tf = document.getElementById('ftotal')
-    tf.innerText = ifavg*10
+    tf.innerText = ifavg*1
+    }0
 }
 
 const IFh = () => {
     var ifhg = document.getElementById('fhg').value
+    if(validate(ifhg)) {
     var tf = document.getElementById('ftotal')
     tf.innerText = ifhg*15
+    }
 }
 
 /* INTERFACE */
 
 const Il = () => {
     var ilow = document.getElementById('ilow').value
+    if(validate(ilow)) {
     var tin = document.getElementById('itotal')
     tin.innerText = ilow*5
+    }
 }
 
 const Ia = () => {
     var iavg = document.getElementById('iavg').value
+    if(validate(iavg)) {
     var tin = document.getElementById('itotal')
     tin.innerText = iavg*7
+    }
 }
 
 const Ih = () => {
     var ihg = document.getElementById('ihg').value
+    if(validate(ihg)) {
     var tin = document.getElementById('itotal')
     tin.innerText = ihg*10
+    }
 }
 
 function UAFtotal() {
@@ -133,4 +167,24 @@ const TDIForm = () => {
 
     document.getElementById('final-result').innerText = cvaf * guaf
 
+}
+
+
+const validate = (n) => {
+    if(Number(n)<0){
+        alert('Input cannot be a Negative Number')
+        return
+    }
+    else{
+        return true
+    }
+}
+
+
+const lessThanFive = (n) => {
+    var val = n.value;
+    console.log(val)
+    if(val>5){
+        alert("Greater than 5")
+    }
 }
