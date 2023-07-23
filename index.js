@@ -1,4 +1,5 @@
 var guaf = 0
+var tdi = 0
 
 /* External Inputs */
 
@@ -184,7 +185,19 @@ const validate = (n) => {
 const lessThanFive = (n) => {
     var val = n.value;
     console.log(val)
-    if(val>5){
-        alert("Greater than 5")
+    if(val>5 || val<0){
+        alert("Degree of Influence value should be in the range 0 - 5")
+        n.value = ""
+    }
+}
+
+const gscValues = () => {
+    console.log("print")
+
+    var focusedInput = document.querySelector('input:focus');
+        console.log(focusedInput)
+    if(focusedInput.tagName === "INPUT") {
+        focusedInput.value = 0
+        console.log("inside")
     }
 }
