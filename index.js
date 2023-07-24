@@ -97,8 +97,8 @@ const IFa = () => {
     var ifavg = document.getElementById('favg').value
     if(validate(ifavg)) {
     var tf = document.getElementById('ftotal')
-    tf.innerText = ifavg*1
-    }0
+    tf.innerText = ifavg*10
+    }
 }
 
 const IFh = () => {
